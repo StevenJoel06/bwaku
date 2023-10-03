@@ -1,4 +1,11 @@
-./_pycache_
-./classes/_pycache_
-./app.log
-./output
+# Ignore Python cache files
+_pycache_
+
+# Ignore cache files in the 'classes' directory
+/classes/_pycache_
+
+# Ignore the log file
+app.log
+
+# Ignore the 'output' directory
+/output
