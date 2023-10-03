@@ -34,7 +34,7 @@ pip install absl-py
 
 5. To generate the output files run the generator.sh file
 ```
-./generator.shX
+./generator.sh
 ```
 6. Generation
 The files will automatically be stored in a newly created folder for outout in .xlsx format.
