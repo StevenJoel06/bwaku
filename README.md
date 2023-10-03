@@ -1,4 +1,4 @@
-# bwaku
+# Bwaku - JSONL Data Processor
 
 ## Introduction
 
