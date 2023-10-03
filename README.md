@@ -6,7 +6,8 @@ The project aims to practice speaking with multiple file formats with Python lib
 - >python >= 3.11
 - >pandas
 - >absl-py
-- >pip
+
+
 #Installation
 
 1. Clone the repo
