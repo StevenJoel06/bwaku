@@ -3,10 +3,10 @@ Bwaku(Swahili for massive) is a Python program that works together with MASSIVE 
 The project aims to practice speaking with multiple file formats with Python libraries such as Pandas. A translation from English to other languages e.g. Swahili is captured. The JSON files are pretty-printed for easy readability
 
 # Prerequisites
->python >= 3.11
->pandas
->absl-py
->pip
+- >python >= 3.11
+- >pandas
+- >absl-py
+- >pip
 #Installation
 
 1. Clone the repo
