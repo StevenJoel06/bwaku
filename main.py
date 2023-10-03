@@ -1,4 +1,4 @@
-from massiveProcessor import MassiveProcessor
+from classes.massiveProcessor import MassiveProcessor
 from absl import app, flags
 from multiprocessing import Process
 

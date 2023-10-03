@@ -4,6 +4,7 @@ import pandas as pd
 class MassiveProcessor:
     def __init__(self):
         self.directory_path = './1.1/data/'
+        self.files = [file for file in os.listdir(self.directory_path)]
         self.en_df = pd.read_json(self.directory_path + 'en-US.jsonl', lines=True)
         self.en_df = self.en_df.loc[self.en_df['partition'] == 'train']
         self.en_df = self.en_df.set_index('id')
@@ -23,10 +24,7 @@ class MassiveProcessor:
             os.makedirs(self.folder_path_pretty)
 
     def process_excel_files(self):
-        files = os.listdir(self.directory_path)
-        files = [file for file in files]
-
-        for file in files:
+        for file in self.files:
             df = pd.read_json(self.directory_path + file, lines=True)
             df = df.set_index('id')
             df = df[['utt', 'annot_utt']]
@@ -52,14 +50,11 @@ class MassiveProcessor:
                 filtered_df.to_json(destination, orient='records', indent=4, force_ascii=False)
 
     def process_pretty_jsonl(self):
-        files = os.listdir(self.directory_path)
-        files = [file for file in files]
-
         output_dict = {}
         self.en_df = self.en_df.drop(columns='annot_utt')
         
 
-        for file in files:
+        for file in self.files:
             df = pd.read_json(self.directory_path + file, lines=True)
             df = df.loc[df['partition'] == 'train']
             df = df[['id', 'utt']]
