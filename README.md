@@ -1,4 +1,4 @@
-﻿# bwaku
+﻿# Bwaku
 
 ## Introduction
 
@@ -6,11 +6,11 @@ Bwaku is a Python program designed for processing and manipulating data stored i
 The project aims to practice speaking with multiple file formats with Python libraries such as Pandas. A translation from English to other languages e.g. Swahili is captured. The JSON files are pretty-printed for easy readability
 This program was created to address specific data processing tasks, including:
 
-- **Generating Excel Files**: Bwaku can take JSONL files containing multilingual data and produce separate Excel files for each language, simplifying data analysis and presentation.
+**Generating Excel Files**: Bwaku can take JSONL files containing multilingual data and produce separate Excel files for each language, simplifying data analysis and presentation.
 
-- **Creating Separate JSONL Files**: Bwaku can filter and split JSONL data based on specified categories (e.g., test, train, dev) and generate separate JSONL files for each category and language.
+**Creating Separate JSONL Files**: Bwaku can filter and split JSONL data based on specified categories (e.g., test, train, dev) and generate separate JSONL files for each category and language.
 
-- **Generating Translation Data**: Bwaku can merge data from different languages, extract translations from English (en) to other languages (xx), and create a structured JSONL file for easy access and analysis.
+**Generating Translation Data**: Bwaku can merge data from different languages, extract translations from English (en) to other languages (xx), and create a structured JSONL file for easy access and analysis.
 
 # Prerequisites
 - >python >= 3.11
